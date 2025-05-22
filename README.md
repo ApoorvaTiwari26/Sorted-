@@ -3,7 +3,7 @@ An OCR-based question extraction system using Tesseract and PDF2Image in Python.
 
 ---
 
-## 🔧 Tech Stack
+## Tech Stack
 
 - **Language:** Python 3
 - **OCR Engine:** Tesseract OCR
@@ -14,7 +14,7 @@ An OCR-based question extraction system using Tesseract and PDF2Image in Python.
 
 ---
 
-## 🚀 Working
+## Working
 
 - Converts PDF pages into high-resolution images
 - Applies image preprocessing for better OCR accuracy
@@ -24,16 +24,16 @@ An OCR-based question extraction system using Tesseract and PDF2Image in Python.
 
 ---
 
-## 📂 How to Use
+## How to Use
 
-## 📥 Clone the Repository
+## Clone the Repository
 
 ```bash
 git clone https://github.com/your-username/ocr-question-extractor.git
 cd ocr-question-extractor
 ```
 
-## 📦 Install Dependencies
+## Install Dependencies
 
 Make sure Python is installed, then install the required libraries:
 
@@ -42,7 +42,7 @@ pip install pytesseract pdf2image opencv-python pillow numpy
 sudo apt-get install -y tesseract-ocr poppler-utils
 ```
 
-## 🚀 Run the Extractor
+## Run the Extractor
 
 1. **Place your PDF file** in the root directory of the project.
 
@@ -56,7 +56,7 @@ python main.py
 
 3. **Follow the prompts to input your PDF file name.**
 
-## 🖼️ PDF Requirements
+## PDF Requirements
 
 The uploaded PDF should:
 
@@ -64,7 +64,7 @@ The uploaded PDF should:
 - Have clear, high-resolution text (preferably 300 DPI)
 - Use English language content
 
-## 📤 Output
+## Output
 
 The system will:
 
@@ -75,7 +75,7 @@ The system will:
 
 ---
 
-## ✅ Example Match Patterns
+## Example Match Patterns
 
 - `1a)`
 - `1. a)`
@@ -84,7 +84,7 @@ The system will:
 
 ---
 
-## 📌 Notes
+## Notes
 
 - Accuracy depends on the quality of the scanned PDF.
 - For best results, use clean, high-resolution documents.

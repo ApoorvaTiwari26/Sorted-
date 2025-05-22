@@ -73,15 +73,6 @@ The system will:
 - Use regex to group questions by chapter (e.g., `1a)`, `b)`, `c)`)
 - Display structured output in the terminal
 
-## ✅ Sample Input Format
-
-Expected question formats include:
-
-- `1a)`
-- `1. a)`
-- `2 a)`
-- `b)` (as a follow-up to the last question number)
-
 ---
 
 ## ✅ Example Match Patterns

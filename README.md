@@ -14,7 +14,7 @@ An OCR-based question extraction system using Tesseract and PDF2Image in Python.
 
 ---
 
-## 🚀 Features
+## 🚀 Working
 
 - Converts PDF pages into high-resolution images
 - Applies image preprocessing for better OCR accuracy
@@ -26,42 +26,61 @@ An OCR-based question extraction system using Tesseract and PDF2Image in Python.
 
 ## 📂 How to Use
 
-1. **Setup Environment** (on Google Colab):
+## 📥 Clone the Repository
 
 ```bash
-!pip install pytesseract pdf2image
-!apt-get install -y tesseract-ocr poppler-utils
+git clone https://github.com/your-username/ocr-question-extractor.git
+cd ocr-question-extractor
 ```
 
-2. **Upload PDF:**
+## 📦 Install Dependencies
 
-```python
-from google.colab import files
-uploaded = files.upload()
-pdf_path = next(iter(uploaded))
+Make sure Python is installed, then install the required libraries:
+
+```bash
+pip install pytesseract pdf2image opencv-python pillow numpy
+sudo apt-get install -y tesseract-ocr poppler-utils
 ```
 
-3. **Run OCR Pipeline:**
+## 🚀 Run the Extractor
 
-```python
-ocr_text = extract_text_from_pdf(pdf_path)
-process_questions(ocr_text)
+1. **Place your PDF file** in the root directory of the project.
+
+2. **Run the script:**
+
+```bash
+python main.py
 ```
 
-4. **Functions Overview:**
+(Ensure your script is saved as `main.py` or modify accordingly.)
 
-- `preprocess_image(image)`: Converts image to grayscale, applies blur and thresholding.
-- `extract_text_from_pdf(pdf_path)`: Converts PDF to images, performs OCR.
-- `process_questions(text)`: Uses regex to group questions by chapter.
+3. **Follow the prompts to input your PDF file name.**
 
----
+## 🖼️ PDF Requirements
 
-## 📝 Output
+The uploaded PDF should:
 
-The output will show:
-- Total number of pages processed
-- First 300 characters of OCR'd text per page
-- Grouped questions by chapter numbers (like Chapter 1, 2, etc.)
+- Contain scanned or printed question papers
+- Have clear, high-resolution text (preferably 300 DPI)
+- Use English language content
+
+## 📤 Output
+
+The system will:
+
+- Convert each PDF page to an image
+- Apply OCR to extract text
+- Use regex to group questions by chapter (e.g., `1a)`, `b)`, `c)`)
+- Display structured output in the terminal
+
+## ✅ Sample Input Format
+
+Expected question formats include:
+
+- `1a)`
+- `1. a)`
+- `2 a)`
+- `b)` (as a follow-up to the last question number)
 
 ---
 
@@ -78,10 +97,8 @@ The output will show:
 
 - Accuracy depends on the quality of the scanned PDF.
 - For best results, use clean, high-resolution documents.
-- If no text is detected, verify preprocessing steps or consider tuning OCR parameters.
 
 ---
 
-## 📬 Contact
 
-For questions or contributions, feel free to reach out!
+Built by Apoorva Tiwari (https://github.com/ApoorvaTiwari26)
